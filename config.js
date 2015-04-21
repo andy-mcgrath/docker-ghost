@@ -13,10 +13,13 @@ config = {
         database: {
             client: 'mysql',
             connection: {
-                host     : '173.194.228.61',
-                user     : 'ghost',
-                password : 'ghost123',
-                database : 'ghost',
+		//
+                // Update connection details below for external mysql server (Tested with Google Cloud SQL)
+                //
+                host     : '172.31.255.254',
+                user     : 'root',
+                password : '',
+                database : 'ghost-db',
                 charset  : 'utf8'
             },
             debug: false
