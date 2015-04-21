@@ -11,9 +11,13 @@ config = {
         url: 'http://my-ghost-blog.com',
         mail: {},
         database: {
-            client: 'sqlite3',
+            client: 'mysql',
             connection: {
-                filename: path.join(__dirname, '/content/data/ghost.db')
+                host     : '173.194.228.61',
+                user     : 'ghost',
+                password : 'ghost123',
+                database : 'ghost',
+                charset  : 'utf8'
             },
             debug: false
         },
@@ -121,3 +125,4 @@ config = {
 };
 // Export config
 module.exports = config;
+
